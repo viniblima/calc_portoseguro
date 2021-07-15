@@ -1,20 +1,138 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content [fullscreen]="true" class="content">
+  <div class="screen">
+    <p>
+      {{ item1 }} {{ funcao }} {{ item2 }}{{ result }}
+    </p>
+  </div>
+  <div class="buttons">
+    <ion-row class="buttons__line">
+      <ion-col col-3 class="button" (click)="limparValor()">
+        <div class="button__content button__1">
+          <p>C</p>
+        </div>
+      </ion-col>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+      <ion-col col-3 class="button" (click)="limparValor()">
+        <div class="button__content button__1">
+          <p>C</p>
+        </div>
+      </ion-col>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+      <ion-col col-3 class="button" (click)="limparValor()">
+        <div class="button__content button__1">
+          <p>C</p>
+        </div>
+      </ion-col>
+
+      <ion-col col-3 class="button" (click)="setarFuncao('/')">
+        <div class="button__content button__2">
+          <p>/</p>
+        </div>
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row class="buttons__line">
+      <ion-col col-3 class="button" (click)="setarValor(7)">
+        <div class="button__content button__3">
+          <p>7</p>
+        </div>
+      </ion-col>
+
+      <ion-col col-3 class="button" (click)="setarValor(8)">
+        <div class="button__content button__3">
+          <p>8</p>
+        </div>
+      </ion-col>
+
+      <ion-col col-3 class="button" (click)="setarValor(9)">
+        <div class="button__content button__3">
+          <p>9</p>
+        </div>
+      </ion-col>
+
+      <ion-col col-3 class="button" (click)="setarFuncao('*')">
+        <div class="button__content button__2">
+          <p>X</p>
+        </div>
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row class="buttons__line">
+      <ion-col col-3 class="button" (click)="setarValor(4)">
+        <div class="button__content button__3">
+          <p>4</p>
+        </div>
+      </ion-col>
+
+      <ion-col col-3 class="button" (click)="setarValor(5)">
+        <div class="button__content button__3">
+          <p>5</p>
+        </div>
+      </ion-col>
+
+      <ion-col col-3 class="button" (click)="setarValor(6)">
+        <div class="button__content button__3">
+          <p>6</p>
+        </div>
+      </ion-col>
+
+      <ion-col col-3 class="button" (click)="setarFuncao('-')">
+        <div class="button__content button__2">
+          <p>-</p>
+        </div>
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row class="buttons__line">
+      <ion-col col-3 class="button" (click)="setarValor(1)">
+        <div class="button__content button__3">
+          <p>1</p>
+        </div>
+      </ion-col>
+
+      <ion-col col-3 class="button" (click)="setarValor(2)">
+        <div class="button__content button__3">
+          <p>2</p>
+        </div>
+      </ion-col>
+
+      <ion-col col-3 class="button" (click)="setarValor(3)">
+        <div class="button__content button__3">
+          <p>3</p>
+        </div>
+      </ion-col>
+
+      <ion-col col-3 class="button" (click)="setarFuncao('+')">
+        <div class="button__content button__2">
+          <p>+</p>
+        </div>
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row class="buttons__line">
+      <ion-col size="6" class="button" (click)="setarValor(0)">
+        <div class="button__content button__3">
+          <p>0</p>
+        </div>
+      </ion-col>
+
+      <ion-col col-3 class="button">
+        <div class="button__content button__3">
+          <!-- <p>,</p> -->
+        </div>
+      </ion-col>
+
+      <ion-col col-3 class="button" (click)="calc()">
+        <div class="button__content button__2">
+          <p>=</p>
+        </div>
+      </ion-col>
+
+    </ion-row>
+
   </div>
 </ion-content>

@@ -1,27 +1,52 @@
-#container {
-  text-align: center;
+.screen {
+  height: 40%;
+  padding-top: 25%;
+  padding-left: 16px;
+  padding-right: 16px;
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  p {
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0;
+    text-align: right;
+  }
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.buttons {
+  height: 60%;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+.content {
+  height: 100%;
 }
 
-#container a {
-  text-decoration: none;
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  padding: 10px 20px;
+
+  &__1 {
+    background-color: lightgray;
+  }
+
+  &__2 {
+    background-color: orange;
+    color: white;
+  }
+
+  &__3 {
+    background-color: black;
+    color: white;
+  }
+
+  &__content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 40px;
+  }
 }
